@@ -1,0 +1,15 @@
+<!-- <view class="container">
+  <view>
+    <text>本周推荐</text>
+    <image></image>
+    <text>教父</text>
+    <text>点评。。。。</text>
+    <text>{{(score>=60?"及格":"不及格")}}</text>
+  </view>
+</view> -->
+
+<swiper style="background: #eee;" indicator-dots="{{true}}">
+  <swiper-item>123</swiper-item>
+  <swiper-item>456</swiper-item>
+  <swiper-item>789</swiper-item>
+</swiper>
