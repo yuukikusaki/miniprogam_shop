@@ -1,13 +1,7 @@
-.banner{
-  width: 375rpx;
-  height: 375rpx;
-  border-radius: 50%;
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
 }
-
-.nav-default{
-  color: blue;
-}
-
-.nav-hover{
-  color: red;
+.index_swiper swiper image {
+  width: 100%;
 }

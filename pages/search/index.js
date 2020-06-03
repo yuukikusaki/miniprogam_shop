@@ -1,15 +1,11 @@
-// pages/weekly/weekly.js
+// pages/search/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    thisWeekMovie: {
-      name: "教父"
-    },
-    count:123,
-    score: 60
+
   },
 
   /**

@@ -1,8 +1,26 @@
-<view class="container">
-  <image class="banner" src="../../images/saftyEdu.jpg"></image>
-  <text style="font-weigth:bold;font-size:60rpx;">电影周周看</text>
-  <view>
-  <text>我</text><navigator style="display:inline;" url="/pages/weekly/weekly" hover-class="nav-hover" class="nav-default">每周推荐</navigator><text>一部好电影</text>
-  </view>
-  <text>我的微博</text>
+<view class="sc_index">
+    <!-- 搜索框 start -->
+    <SearchInput></SearchInput>
+    <!-- 搜索框 end -->
+    <!-- 轮播图 start -->
+    <view class="index_swiper">
+        <!-- 
+            1 swiper 默认宽高 100% * 150px
+            2 image 默认宽高 320px * 240px
+            3 原图 750 * 340
+            4 图片宽度100% 高度自适应
+         -->
+        <swiper autoplay indicator-dots circular>
+            <swiper-item 
+            wx:for="{{swiperList}}"
+            wx:key="goods_id"
+            >
+                <navigator>
+                    <image  src="{{item.image_src}}" mode="widthFix"/>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 轮播图 end -->
 </view>
+  
