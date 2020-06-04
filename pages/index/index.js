@@ -1,5 +1,5 @@
 //Page Object
-import { request } from '../../request/index.js'
+import { request } from '../../request/index.js';
 Page({
     data: {
         // 轮播图数组
@@ -18,7 +18,7 @@ Page({
 
     // 获取轮播图
     getSwiperList(){
-        request({ url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata" })
+        request({ url: "/home/swiperdata" })
         .then(res => {
             if (res.data.meta.status === 200) {
                 this.setData({
@@ -29,7 +29,7 @@ Page({
     },
     // 获取导航数据
     getCatesList(){
-        request({ url: "https://api-hmugo-web.itheima.net/api/public/v1/home/catitems" })
+        request({ url: "/home/catitems" })
         .then(res => {
             if (res.data.meta.status === 200) {
                 this.setData({
@@ -40,7 +40,7 @@ Page({
     },
     // 获取楼层数据
     getFloorList(){
-        request({ url: "https://api-hmugo-web.itheima.net/api/public/v1/home/floordata" })
+        request({ url: "/home/floordata" })
         .then(res => {
             if (res.data.meta.status === 200) {
                 this.setData({

@@ -35,7 +35,7 @@
         wx:for="{{floorList}}"
         wx:for-item="item1"
         wx:for-index="index1"
-        wx:key="floor_title">
+        wx:key="index1">
             <!-- 标题 -->
             <view class="floor_title">
                 <image mode="widthFix" src="{{item1.floor_title.image_src}}"/>
